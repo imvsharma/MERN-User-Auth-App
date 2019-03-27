@@ -7,14 +7,16 @@ import History from './__helper/history';
 class App extends Component {
   render() {
     return (
-      <div >
-        <Router history={History}>
-          <Switch>
-            <Route exact path="/" component={LoginPage} />
-            <Route path="/signup" component={SignupPage} />
-          </Switch>
-        </Router>
-      </div>
+        <div className="container-fluid">
+          <div className="row">
+            <Router history={History}>
+              <Switch>
+                <Route exact path="/" component={LoginPage} />
+                <Route path="/signup" component={SignupPage} />
+              </Switch>
+            </Router>   
+          </div>
+        </div>
     );
   }
 }
